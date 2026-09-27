@@ -46,7 +46,9 @@ Ecoje una actividad de la lista:
             actividad = "parque acuático"
             edad_minima = 12
         else:
+            limpiar_pantalla()
             print("Actividad no válida. Por favor, elige una opción del 1 al 4.")
+            time.sleep(2)
             limpiar_pantalla()
             continue
         return numero, actividad, edad_minima
@@ -69,20 +71,27 @@ while True:
         categoria = "adulto"
     elif edad <= 99:
         categoria = "adulto mayor"
-    else:
+    elif edad >= 100:
         categoria = "edad imposible"
         print("Lo siento, esa edad parece demasiado alta.")
 
     ##print(f"{nombre} tiene {edad} años y es un/a {categoria}.")
 
-    if edad >= edad_minima:
+    if edad >= edad_minima and categoria != "edad imposible":
         limpiar_pantalla()
-        print(f"Felicidades {nombre}, puedes entrar a la actividad {nombre_actividad}.")
+        print(f"Felicidades {nombre}, eres de la categoria {categoria}, y puedes entrar a la actividad {nombre_actividad}.")
+
+    elif categoria == "edad imposible":
+        limpiar_pantalla()
+        print(f"Lo siento {nombre}, la edad que has introducido es imposible. Por favor, introduce una edad válida.")
+        time.sleep(4)
+        limpiar_pantalla()
     else:
         limpiar_pantalla()
-        print(f"Lo siento {nombre}, no puedes entrar a la actividad {nombre_actividad}. Te faltan {edad_minima - edad} años.")
+        print(f"Lo siento {nombre}, eres de la categoria {categoria}, y no puedes entrar a la actividad {nombre_actividad}. Te faltan {edad_minima - edad} años.")
 
     if not pedir_intento():
+        limpiar_pantalla()
         print("Gracias por usar el programa")
         time.sleep(4)
         limpiar_pantalla()
