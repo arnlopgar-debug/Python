@@ -14,7 +14,7 @@ def pedir_edad():
     while True:
         try:
             edad = int(input("Introduce tu edad: "))
-            if edad < 0:
+            if edad < 0 or edad > 99:
                 raise ValueError
             return edad
         except ValueError:
@@ -73,7 +73,6 @@ while True:
         categoria = "adulto mayor"
     elif edad >= 100:
         categoria = "edad imposible"
-        print("Lo siento, esa edad parece demasiado alta.")
 
     ##print(f"{nombre} tiene {edad} años y es un/a {categoria}.")
 
