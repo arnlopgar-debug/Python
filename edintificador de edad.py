@@ -9,7 +9,6 @@ def pedir_intento():
     intentar = input("¿Quieres intentarlo de nuevo? (s/n): ").strip().lower()
     return intentar == "s"
 
-
 def pedir_edad():
     """Pide una edad y repite hasta recibir un valor válido."""
     while True:
