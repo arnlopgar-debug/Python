@@ -1,0 +1,543 @@
+{
+    ".png": {
+        "Imágenes": 12802,
+        "Diseño": 3647,
+        "Material": 1944
+    },
+    ".pdf": {
+        "Documentos": 12786,
+        "Informes": 3852,
+        "Presentaciones": 1308
+    },
+    ".docx": {
+        "Documentos": 11701,
+        "Informes": 2592,
+        "Textos": 3186
+    },
+    ".txt": {
+        "Documentos": 9056,
+        "Notas": 5148,
+        "Textos": 3751
+    },
+    ".xlsx": {
+        "Documentos": 3529,
+        "Datos": 8966,
+        "Tablas": 2785
+    },
+    ".pptx": {
+        "Presentaciones": 9398,
+        "Documentos": 2592,
+        "Diseño": 1314
+    },
+    ".odt": {
+        "Documentos": 4509,
+        "Textos": 2794
+    },
+    ".csv": {
+        "Datos": 9808,
+        "Documentos": 2702,
+        "Tablas": 1492
+    },
+    ".json": {
+        "Datos": 8283,
+        "Programación": 4494,
+        "Configuración": 2378
+    },
+    ".xml": {
+        "Datos": 6390,
+        "Configuración": 3020,
+        "Documentos": 1492
+    },
+    ".md": {
+        "Documentos": 5570,
+        "Textos": 3448,
+        "Programación": 1944
+    },
+    ".jpg": {
+        "Imágenes": 12370,
+        "Diseño": 3210,
+        "Material": 1537
+    },
+    ".jpeg": {
+        "Imágenes": 11948,
+        "Diseño": 2996,
+        "Material": 1528
+    },
+    ".gif": {
+        "Imágenes": 6836,
+        "Diseño": 3020,
+        "Material": 1314
+    },
+    ".webp": {
+        "Imágenes": 5552,
+        "Diseño": 2598,
+        "Material": 1100
+    },
+    ".svg": {
+        "Diseño": 9404,
+        "Imágenes": 3662,
+        "Material": 1944
+    },
+    ".bmp": {
+        "Imágenes": 4928,
+        "Diseño": 1950
+    },
+    ".ico": {
+        "Diseño": 3448,
+        "Imágenes": 1956
+    },
+    ".mp4": {
+        "Videos": 12584,
+        "Multimedia": 2592
+    },
+    ".avi": {
+        "Videos": 7900,
+        "Multimedia": 2170
+    },
+    ".mkv": {
+        "Videos": 8536,
+        "Multimedia": 2372
+    },
+    ".mov": {
+        "Videos": 6628,
+        "Multimedia": 1950
+    },
+    ".wmv": {
+        "Videos": 4084,
+        "Multimedia": 1106
+    },
+    ".flv": {
+        "Videos": 3014,
+        "Multimedia": 892
+    },
+    ".mp3": {
+        "Audio": 11104,
+        "Multimedia": 2580
+    },
+    ".wav": {
+        "Audio": 9606,
+        "Multimedia": 2158
+    },
+    ".flac": {
+        "Audio": 5582,
+        "Multimedia": 1320
+    },
+    ".aac": {
+        "Audio": 4072,
+        "Multimedia": 1100
+    },
+    ".ogg": {
+        "Audio": 3436,
+        "Multimedia": 889
+    },
+    ".zip": {
+        "Archivos_Comprimidos": 10254,
+        "Backups": 2378
+    },
+    ".rar": {
+        "Archivos_Comprimidos": 8334,
+        "Backups": 1944
+    },
+    ".7z": {
+        "Archivos_Comprimidos": 6848,
+        "Backups": 1522
+    },
+    ".tar": {
+        "Archivos_Comprimidos": 5576,
+        "Backups": 1309
+    },
+    ".gz": {
+        "Archivos_Comprimidos": 4932,
+        "Backups": 1098
+    },
+    ".bz2": {
+        "Archivos_Comprimidos": 3232,
+        "Backups": 780
+    },
+    ".py": {
+        "Programación": 12576,
+        "Código": 4082,
+        "Datos": 1312
+    },
+    ".pyw": {
+        "Programación": 2376,
+        "Código": 1098
+    },
+    ".js": {
+        "Programación": 9396,
+        "Código": 3226,
+        "Web": 2584
+    },
+    ".ts": {
+        "Programación": 6626,
+        "Código": 2584,
+        "Web": 1942
+    },
+    ".java": {
+        "Programación": 7696,
+        "Código": 2382
+    },
+    ".c": {
+        "Programación": 6204,
+        "Código": 1954
+    },
+    ".cpp": {
+        "Programación": 7476,
+        "Código": 2382
+    },
+    ".cs": {
+        "Programación": 4718,
+        "Código": 1740
+    },
+    ".html": {
+        "Programación": 9182,
+        "Web": 3437,
+        "Diseño": 1526
+    },
+    ".css": {
+        "Programación": 7904,
+        "Diseño": 3012,
+        "Web": 2162
+    },
+    ".php": {
+        "Programación": 5562,
+        "Web": 2168
+    },
+    ".sql": {
+        "Datos": 6866,
+        "Programación": 2806,
+        "BaseDatos": 1908
+    },
+    ".db": {
+        "Datos": 5148,
+        "BaseDatos": 1944
+    },
+    ".sqlite": {
+        "Datos": 4922,
+        "BaseDatos": 1736
+    },
+    ".ini": {
+        "Configuración": 4494,
+        "Programación": 1730
+    },
+    ".cfg": {
+        "Configuración": 3858,
+        "Programación": 1311
+    },
+    ".yaml": {
+        "Configuración": 7032,
+        "Datos": 2170,
+        "Programación": 1596
+    },
+    ".yml": {
+        "Configuración": 6390,
+        "Datos": 1950,
+        "Programación": 1284
+    },
+    ".toml": {
+        "Configuración": 4928,
+        "Programación": 1522
+    },
+    ".exe": {
+        "Programas": 6632,
+        "Software": 2804
+    },
+    ".msi": {
+        "Programas": 4076,
+        "Software": 1740
+    },
+    ".apk": {
+        "Programas": 2804,
+        "Software": 1104
+    },
+    ".dmg": {
+        "Programas": 2168,
+        "Software": 890
+    },
+    ".iso": {
+        "Archivos_Comprimidos": 2798,
+        "Software": 1318
+    },
+    ".torrent": {
+        "Programas": 54,
+        "Archivos_Comprimidos": 18
+    },
+    ".psd": {
+        "Diseño": 7900,
+        "Imágenes": 2812
+    },
+    ".ai": {
+        "Diseño": 6640,
+        "Imágenes": 2384
+    },
+    ".fig": {
+        "Diseño": 4072,
+        "Imágenes": 1950
+    },
+    ".epub": {
+        "Documentos": 4718,
+        "Libros": 1954
+    },
+    ".mobi": {
+        "Documentos": 3232,
+        "Libros": 1526
+    },
+    ".djvu": {
+        "Documentos": 2168,
+        "Libros": 890
+    },
+    ".xls": {
+        "Datos": 7026,
+        "Documentos": 3002,
+        "Tablas": 2116
+    },
+    ".xlsm": {
+        "Datos": 4726,
+        "Documentos": 1956,
+        "Tablas": 1284
+    },
+    ".doc": {
+        "Documentos": 9396,
+        "Textos": 2948,
+        "Informes": 1700
+    },
+    ".rtf": {
+        "Documentos": 4196,
+        "Textos": 1908
+    },
+    ".tex": {
+        "Documentos": 3156,
+        "Textos": 2116,
+        "Informes": 1284
+    },
+    ".tsv": {
+        "Datos": 6068,
+        "Documentos": 2116
+    },
+    ".env": {
+        "Configuración": 2948,
+        "Programación": 1076
+    },
+    ".dbf": {
+        "Datos": 2324,
+        "BaseDatos": 868
+    },
+    ".mdb": {
+        "Datos": 1908,
+        "BaseDatos": 660
+    },
+    ".ppt": {
+        "Presentaciones": 8356,
+        "Documentos": 1908
+    },
+    ".odp": {
+        "Presentaciones": 5652,
+        "Documentos": 1492
+    },
+    ".key": {
+        "Presentaciones": 4196,
+        "Diseño": 1284
+    },
+    ".tiff": {
+        "Imágenes": 4196,
+        "Diseño": 1700
+    },
+    ".tif": {
+        "Imágenes": 3988,
+        "Diseño": 1492
+    },
+    ".heic": {
+        "Imágenes": 3364,
+        "Diseño": 1076
+    },
+    ".raw": {
+        "Imágenes": 2740,
+        "Diseño": 972
+    },
+    ".nef": {
+        "Imágenes": 2324,
+        "Diseño": 868
+    },
+    ".mpeg": {
+        "Videos": 4404,
+        "Multimedia": 1284
+    },
+    ".mpg": {
+        "Videos": 3988,
+        "Multimedia": 1076
+    },
+    ".webm": {
+        "Videos": 5444,
+        "Multimedia": 1492
+    },
+    ".3gp": {
+        "Videos": 2116,
+        "Multimedia": 660
+    },
+    ".m4a": {
+        "Audio": 2948,
+        "Multimedia": 764
+    },
+    ".wma": {
+        "Audio": 2324,
+        "Multimedia": 660
+    },
+    ".xz": {
+        "Archivos_Comprimidos": 2530,
+        "Backups": 658
+    },
+    ".tar.gz": {
+        "Archivos_Comprimidos": 4610,
+        "Backups": 970
+    },
+    ".tar.xz": {
+        "Archivos_Comprimidos": 2114,
+        "Backups": 554
+    },
+    ".pyc": {
+        "Programación": 1698,
+        "Código": 866
+    },
+    ".jsx": {
+        "Programación": 4818,
+        "Web": 2114,
+        "Código": 1698
+    },
+    ".tsx": {
+        "Programación": 4402,
+        "Web": 1906,
+        "Código": 1490
+    },
+    ".jar": {
+        "Programación": 2530,
+        "Software": 1282
+    },
+    ".cc": {
+        "Programación": 5442,
+        "Código": 1906
+    },
+    ".rb": {
+        "Programación": 2946,
+        "Código": 1074
+    },
+    ".go": {
+        "Programación": 2530,
+        "Código": 866
+    },
+    ".rs": {
+        "Programación": 2114,
+        "Código": 866
+    },
+    ".swift": {
+        "Programación": 1906,
+        "Código": 866
+    },
+    ".kt": {
+        "Programación": 1906,
+        "Código": 762
+    },
+    ".htm": {
+        "Programación": 4402,
+        "Web": 1698,
+        "Diseño": 866
+    },
+    ".scss": {
+        "Programación": 3154,
+        "Diseño": 1490,
+        "Web": 1074
+    },
+    ".sass": {
+        "Programación": 2530,
+        "Diseño": 1282,
+        "Web": 866
+    },
+    ".lua": {
+        "Programación": 2114,
+        "Código": 866
+    },
+    ".sh": {
+        "Programación": 4402,
+        "Configuración": 1698
+    },
+    ".bash": {
+        "Programación": 2946,
+        "Configuración": 1282
+    },
+    ".zsh": {
+        "Programación": 1906,
+        "Configuración": 762
+    },
+    ".ps1": {
+        "Programación": 2322,
+        "Configuración": 1074
+    },
+    ".bat": {
+        "Programación": 2530,
+        "Configuración": 970
+    },
+    ".cmd": {
+        "Programación": 2114,
+        "Configuración": 866
+    },
+    ".pl": {
+        "Programación": 1906,
+        "Código": 762
+    },
+    ".r": {
+        "Datos": 2114,
+        "Programación": 1074
+    },
+    ".ipynb": {
+        "Programación": 5442,
+        "Datos": 2322,
+        "Documentos": 1074
+    },
+    ".dll": {
+        "Programas": 2322,
+        "Software": 1074
+    },
+    ".deb": {
+        "Programas": 1906,
+        "Software": 866
+    },
+    ".rpm": {
+        "Programas": 1698,
+        "Software": 866
+    },
+    ".app": {
+        "Programas": 1282,
+        "Software": 658
+    },
+    ".fb2": {
+        "Documentos": 1906,
+        "Libros": 762
+    },
+    ".bak": {
+        "Backups": 3154,
+        "Datos": 1490
+    },
+    ".old": {
+        "Backups": 1906,
+        "Datos": 866
+    },
+    ".tmp": {
+        "Backups": 1282,
+        "Documentos": 450
+    },
+    ".log": {
+        "Datos": 2738,
+        "Documentos": 1074
+    },
+    ".dat": {
+        "Datos": 2322,
+        "Backups": 866
+    },
+    ".bin": {
+        "Datos": 1698,
+        "Archivos_Comprimidos": 658
+    },
+    ".hex": {
+        "Datos": 1074,
+        "Programación": 658
+    }
+}

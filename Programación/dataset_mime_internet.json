@@ -1,0 +1,2183 @@
+{
+  "source": "https://raw.githubusercontent.com/jshttp/mime-db/master/db.json",
+  "license": "MIT (mime-db)",
+  "dataset_note": "mime-db aporta metadades MIME i extensions; els noms i histogrames de bytes d'entrenament es generen localment i no són fitxers reals descarregats.",
+  "downloaded_at": "2026-09-30 10:35:31 UTC",
+  "entries": [
+    {
+      "extension": ".3dml",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".3ds",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".3g2",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".3gp",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".3gpp",
+      "category": "Audio",
+      "mime_types": 2
+    },
+    {
+      "extension": ".7z",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".aac",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".abw",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ace",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".adp",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".adts",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".afm",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".aif",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".aifc",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".aiff",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".air",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".amlx",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".amr",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".apng",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".appcache",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".asf",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".asm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".asx",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".au",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".avci",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".avcs",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".avi",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".avif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".azf",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".azs",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".azv",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".azw",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".b16",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".bat",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".bdf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".bmp",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".boz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".btf",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".btif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".bz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".bz2",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".c",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cab",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".caf",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cc",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cfs",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cgm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".clkw",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cmx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".coffee",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".com",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".conf",
+      "category": "Configuración",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cpp",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".css",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".csv",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".curl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".cxx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dcurl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dds",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".def",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dgc",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dib",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dic",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".djv",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".djvu",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dll",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dmg",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dng",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".doc",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".docm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".docx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dot",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dotm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dotx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dpx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dra",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".drle",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dsc",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dts",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dtshd",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dvb",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dwg",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".dxf",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ear",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ecelp4800",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ecelp7470",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ecelp9600",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".emf",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".eol",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".eot",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".epub",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".etx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".exe",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".exr",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".f",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".f4v",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".f77",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".f90",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".facti",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fbs",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fh",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fh4",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fh5",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fh7",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fhc",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fits",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".flac",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fli",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".flv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".flx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fly",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".for",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fpx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fst",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".fvt",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".g3",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gca",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ged",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gsf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gslides",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gtar",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gv",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".gz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".h",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".h261",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".h263",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".h264",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".hbs",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".heic",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".heics",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".heif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".heifs",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".hej2",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".hh",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".htc",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".htm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".html",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ico",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ics",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ief",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ifb",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".in",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ini",
+      "category": "Configuración",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jad",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jade",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jaii",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jais",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jar",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jardiff",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".java",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jfif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jhc",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jls",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jng",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jp2",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpe",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpeg",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpf",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpg",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpg2",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpgm",
+      "category": "Imágenes",
+      "mime_types": 2
+    },
+    {
+      "extension": ".jpgv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jph",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jpm",
+      "category": "Imágenes",
+      "mime_types": 2
+    },
+    {
+      "extension": ".jpx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".js",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".json",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jsx",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxl",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxr",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxra",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxrs",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxs",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxsc",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxsi",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".jxss",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".kar",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ktx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ktx2",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".kwd",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".kwt",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".less",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".lha",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".list",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".litcoffee",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".log",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".lottie",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".lua",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".lvp",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".lwp",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".lzh",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m1v",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m2a",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m2t",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m2ts",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m2v",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m3a",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m3u",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m4a",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m4b",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m4s",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m4u",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".m4v",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".man",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".manifest",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".map",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".markdown",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mcurl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".md",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mdi",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mdx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".me",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mid",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".midi",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mj2",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mjp2",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mjs",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mk3d",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mka",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mkd",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mks",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mkv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mml",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mmr",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mng",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mobi",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mov",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".movie",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mp2",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mp2a",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mp3",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mp4",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mp4a",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mp4v",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mpe",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mpeg",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mpg",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mpg4",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mpga",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ms",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".msi",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mts",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mxmf",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".mxu",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".n3",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".nfo",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".npx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".odm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".odp",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".odt",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".oga",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ogg",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ogv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".opml",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".opus",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".org",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".otf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".oth",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".otp",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ott",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".p",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pas",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pbm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pcf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pct",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pcx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pde",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pdf",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pfa",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pfb",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pfm",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pfr",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pgm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".php",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pic",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".png",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pnm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pot",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".potm",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".potx",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ppam",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ppm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pps",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ppsm",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ppsx",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ppt",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pptm",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pptx",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".prc",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".psd",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".psf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pti",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pya",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".pyv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".qt",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ra",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ram",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rar",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ras",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rgb",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rip",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rlc",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rmi",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rmp",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rng",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".roff",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rs",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rtf",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".rtx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".s",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".s3m",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sass",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".scss",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".scurl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sda",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sdc",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sdd",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sdw",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sfv",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sgi",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sgl",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sgm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sgml",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sh",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".shex",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".shtml",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sid",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sil",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sldm",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sldx",
+      "category": "Presentaciones",
+      "mime_types": 1
+    },
+    {
+      "extension": ".slim",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".slm",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".smf",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".smv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".snd",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".snf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".spdx",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".spot",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".spx",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sql",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sqlite",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".stpxz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".stpz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".styl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".stylus",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".sub",
+      "category": "Imágenes",
+      "mime_types": 2
+    },
+    {
+      "extension": ".svg",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".svgz",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".t",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".t38",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tap",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tar",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".td",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".text",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tfx",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tga",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tiff",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".toml",
+      "category": "Configuración",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tr",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ts",
+      "category": "Programación",
+      "mime_types": 1
+    },
+    {
+      "extension": ".tsv",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ttc",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ttf",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ttl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".txt",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uri",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uris",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".urls",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".usdz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ustar",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uu",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uva",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvg",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvh",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvi",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvm",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvp",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvs",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvu",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvva",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvg",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvh",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvi",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvm",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvp",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvs",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvu",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvvz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".uvz",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vcard",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vcf",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vcs",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".viv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vob",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vor",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vtf",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".vtt",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".war",
+      "category": "Software",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wav",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wax",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wbmp",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wdp",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".weba",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".webm",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".webp",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wgsl",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wm",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wma",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wmf",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wml",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wmls",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wmv",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wmx",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".woff",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".woff2",
+      "category": "Diseño",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wpd",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".wvx",
+      "category": "Videos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xbm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xif",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xls",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xlsx",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xm",
+      "category": "Audio",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xml",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xpm",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xsd",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xsl",
+      "category": "Datos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".xwd",
+      "category": "Imágenes",
+      "mime_types": 1
+    },
+    {
+      "extension": ".yaml",
+      "category": "Configuración",
+      "mime_types": 1
+    },
+    {
+      "extension": ".yml",
+      "category": "Configuración",
+      "mime_types": 1
+    },
+    {
+      "extension": ".ymp",
+      "category": "Documentos",
+      "mime_types": 1
+    },
+    {
+      "extension": ".zip",
+      "category": "Archivos_Comprimidos",
+      "mime_types": 1
+    }
+  ]
+}
