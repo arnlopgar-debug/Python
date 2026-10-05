@@ -1,0 +1,22 @@
+DEMOSTRACION DEL ORGANIZADOR INTELIGENTE
+
+Todos los archivos son sintéticos y no contienen datos personales.
+Incluye 57 muestras de documentos, imágenes, datos, código, audio y ZIP.
+Algunos archivos tienen extensiones incorrectas, hay tres pares duplicados
+y cinco muestras ambiguas que deberían quedar en Por_revisar.
+
+Abre el terminal en la carpeta Programación y ejecuta:
+FORCE_COLOR=1 python "alogirtma d'organitazació.py"
+
+Para probar la organización neuronal, elige 1 en el menú principal y escribe:
+demostracion/Entrada
+La MLP decidirá una categoría para cada archivo sin usar firmas ni reglas de respaldo.
+Responde s en la única confirmación global para aplicar todos los movimientos.
+Al final, mira dentro de Entrada y abre las carpetas de categoría.
+
+Las herramientas de extensiones, duplicados y cuarentena están en el menú avanzado;
+son funciones separadas y no forman parte de la decisión neuronal principal.
+
+Para empezar de nuevo, ejecuta python crear_demostracion.py desde Programación.
+Solo reemplaza muestras reconocidas de demostración; si encuentra archivos
+desconocidos, se detiene sin borrarlos. El corpus pruebas_clasificador no cambia.

@@ -2,7 +2,7 @@
   "source": "https://raw.githubusercontent.com/jshttp/mime-db/master/db.json",
   "license": "MIT (mime-db)",
   "dataset_note": "mime-db aporta metadades MIME i extensions; els noms i histogrames de bytes d'entrenament es generen localment i no són fitxers reals descarregats.",
-  "downloaded_at": "2026-09-30 10:35:31 UTC",
+  "downloaded_at": "2026-10-01 12:03:48 UTC",
   "entries": [
     {
       "extension": ".3dml",

@@ -8,6 +8,7 @@ import random
 import re
 import shutil
 import struct
+import sys
 import time
 import unicodedata
 import urllib.request
@@ -22,6 +23,44 @@ NOM_CUARENTENA = ".organizador_cuarentena"
 FUENTE_CATALOGO_MIME = "https://raw.githubusercontent.com/jshttp/mime-db/master/db.json"
 MIN_EXEMPLES_PREDICCIO = 3
 CONFIANCA_MINIMA = 0.75
+
+COLORES_TERMINAL = {
+    "reset": "\033[0m",
+    "negrita": "\033[1m",
+    "rojo": "\033[91m",
+    "verde": "\033[92m",
+    "amarillo": "\033[93m",
+    "azul": "\033[94m",
+    "magenta": "\033[95m",
+    "cian": "\033[96m",
+}
+
+
+def colorear(texto, color):
+    """Aplica color només en terminals compatibles i si no s'ha desactivat."""
+    color_forzado = os.environ.get("FORCE_COLOR", "").lower() in {"1", "true", "yes"}
+    if os.environ.get("NO_COLOR") is not None or not (color_forzado or getattr(sys.stdout, "isatty", lambda: False)()):
+        return str(texto)
+    return f"{COLORES_TERMINAL.get(color, '')}{texto}{COLORES_TERMINAL['reset']}"
+
+
+def color_categoria(categoria):
+    paleta = ("cian", "verde", "amarillo", "magenta", "azul")
+    indice = sum(ord(caracter) for caracter in categoria) % len(paleta)
+    return paleta[indice]
+
+
+def barra_confianza(confianza):
+    confianza = max(0.0, min(1.0, confianza))
+    relleno = round(confianza * 10)
+    return f"[{'#' * relleno}{'.' * (10 - relleno)}] {confianza:.0%}"
+
+
+def imprimir_seccion(titulo):
+    separador = "=" * 64
+    print("\n" + colorear(separador, "cian"))
+    print(colorear(titulo.upper(), "negrita"))
+    print(colorear(separador, "cian"))
 
 DATASET_BASE = {
     ".pdf": {"Documentos": 120, "Informes": 36, "Presentaciones": 12},
@@ -875,7 +914,7 @@ def histograma_bytes_red(ruta, n_bytes=256, dades=None):
     return hist
 
 
-def vector_caracteristicas_desde_datos(nombre, histograma):
+def vector_caracteristicas_desde_datos(nombre, histograma, cabecera=b""):
     extension = os.path.splitext(nombre)[1].lower()
     tokens = tokens_del_nom_red(nombre)
     vector = [0.0] * len(CATEGORIAS_MODELO)
@@ -898,6 +937,8 @@ def vector_caracteristicas_desde_datos(nombre, histograma):
     if "base" in tokens and "datos" in tokens:
         vector[CATEGORIAS_MODELO.index("BaseDatos")] += 1.5
     vector.extend(histograma)
+    vector.extend(byte / 255.0 for byte in cabecera[:64])
+    vector.extend([0.0] * (64 - min(len(cabecera), 64)))
     return vector
 
 
@@ -905,16 +946,16 @@ def vector_caracteristicas_red(ruta_archivo, cabecera=None):
     """Vectoriza el nombre y el histograma de bytes inicial del archivo."""
     nombre = os.path.basename(ruta_archivo)
     return vector_caracteristicas_desde_datos(
-        nombre, histograma_bytes_red(ruta_archivo, dades=cabecera)
+        nombre, histograma_bytes_red(ruta_archivo, dades=cabecera), cabecera or b""
     )
 
 
 FIRMAS_BYTES_CATEGORIA = {
     "Documentos": b"%PDF-1.7 document page text",
-    "Imágenes": b"\x89PNG\r\n\x1a\n image pixel",
+    "Imágenes": (b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR", b"\xff\xd8\xff\xe0\x00\x10JFIF"),
     "Videos": b"ftypisom video stream",
-    "Audio": b"ID3 audio stream frame",
-    "Archivos_Comprimidos": b"PK\x03\x04 archive compressed",
+    "Audio": (b"ID3 audio stream frame", b"RIFF\x00\x00\x00\x00WAVEfmt "),
+    "Archivos_Comprimidos": (b"PK\x03\x04 archive compressed", b"\x1f\x8b compressed gzip"),
     "Programación": b"def main() { return code; }",
     "Datos": b'{"data": [1, 2, 3], "rows": 10}',
     "Configuración": b"[settings]\nconfig=true\n",
@@ -965,14 +1006,15 @@ def generar_dataset_red(num_muestras=6000, entradas_mime=None):
             + random.choice(palabras) + str(random.randint(1, 999999)) + extension
         )
         categoria_firma = CATEGORIA_PADRE_MODELO.get(categoria, categoria)
-        firma = FIRMAS_BYTES_CATEGORIA[categoria_firma]
+        firma_disponibles = FIRMAS_BYTES_CATEGORIA[categoria_firma]
+        firma = random.choice(firma_disponibles) if isinstance(firma_disponibles, tuple) else firma_disponibles
         carga = firma + bytes(random.choice((0, 1, 32, 65, 127, 128, 255)) for _ in range(64 - len(firma)))
         histograma = [0.0] * 256
         for byte in carga:
             histograma[byte] += 1.0
         total_bytes = sum(histograma)
         histograma = [valor / total_bytes for valor in histograma]
-        vector = vector_caracteristicas_desde_datos(nombre, histograma)
+        vector = vector_caracteristicas_desde_datos(nombre, histograma, carga)
         salida = [0.0] * len(CATEGORIAS_MODELO)
         salida[CATEGORIAS_MODELO.index(categoria)] = 1.0
         dataset.append((vector, salida))
@@ -1064,7 +1106,7 @@ class RedNeuronalMLP:
 def guardar_red_neuronal(red, num_muestras, epochs):
     """Desa arquitectura i pesos perquè la xarxa entrenada es pugui reutilitzar."""
     datos = {
-        "version": 2,
+        "version": 3,
         "source": FUENTE_CATALOGO_MIME,
         "categories": red.categorias,
         "inputs": red.entradas,
@@ -1086,7 +1128,7 @@ def cargar_red_neuronal():
     try:
         with open(FITXER_RED_NEURONAL, "r", encoding="utf-8") as fitxer:
             datos = json.load(fitxer)
-        if datos.get("version") != 2 or datos.get("categories") != CATEGORIAS_MODELO:
+        if datos.get("version") != 3 or datos.get("categories") != CATEGORIAS_MODELO:
             return None
         red = RedNeuronalMLP(
             datos["inputs"], datos["hidden"], datos["outputs"], datos["categories"]
@@ -1132,19 +1174,35 @@ def entrenar_red_neuronal_massiva(num_muestras=9000, epochs=3, learning_rate=0.0
 
 
 def clasificar_archivo_con_red(red, ruta_archivo, cabecera=None):
-    """Combina firmas binarias verificables con la predicción neuronal de respaldo."""
+    """Classifica exclusivament amb la MLP, sense signatures ni regles externes."""
     if cabecera is None:
         try:
             with open(ruta_archivo, "rb") as fitxer:
                 cabecera = fitxer.read(512)
         except OSError:
             cabecera = b""
-    categoria_firma = detectar_categoria_por_firma(ruta_archivo, cabecera)
-    if categoria_firma:
-        return categoria_firma, 0.99
     vector = vector_caracteristicas_red(ruta_archivo, cabecera)
     categoria, confianza = red.predict(vector)
     return categoria, confianza
+
+
+def clasificar_archivo_solo_red(red, ruta_archivo, cabecera=None):
+    """Retorna la decisió de la xarxa i les probabilitats per explicar-la."""
+    if cabecera is None:
+        try:
+            with open(ruta_archivo, "rb") as fitxer:
+                cabecera = fitxer.read(65536)
+        except OSError:
+            cabecera = b""
+    vector = vector_caracteristicas_red(ruta_archivo, cabecera)
+    _, probabilidades = red.forward(vector)
+    indice = max(range(len(probabilidades)), key=lambda posicion: probabilidades[posicion])
+    ordenadas = sorted(enumerate(probabilidades), key=lambda item: item[1], reverse=True)
+    alternativas = [
+        (red.categorias[posicion], probabilidad)
+        for posicion, probabilidad in ordenadas[1:3]
+    ]
+    return red.categorias[indice], probabilidades[indice], alternativas
 
 
 def detectar_categoria_por_firma(ruta_archivo, capcalera=None):
@@ -1228,18 +1286,24 @@ def clasificar_archivo_con_red_guardada():
     if categoria is None:
         print("No hay evidencias suficientes para clasificar este archivo con seguridad.")
         return
-    print(f"Categoría sugerida: {categoria} (confianza contextual: {confianza:.1%})")
-    print("Evidencias: " + ", ".join(razones))
+    color_confianza = "verde" if confianza >= 0.9 else "amarillo" if confianza >= CONFIANCA_MINIMA else "rojo"
+    print("\n" + colorear("RESULTADO DE LA RED NEURONAL", "negrita"))
+    print(f"Categoría: {colorear(categoria, color_categoria(categoria))}")
+    print(f"Confianza: {colorear(barra_confianza(confianza), color_confianza)}")
+    print("Evidencias:")
+    for razon in razones:
+        print(f"  - {razon}")
 
 
-def organitzar_fitxers(carpeta_origen=None):
-    """Classifica, mostra una vista prèvia i organitza els fitxers amb confirmació."""
+def organitzar_fitxers(carpeta_origen=None, solo_red=False):
+    """Classifica, mostra una vista prèvia i organitza amb confirmació."""
     if carpeta_origen is None:
-        carpeta_origen = input("Introdueix la ruta de la carpeta que vols organitzar: ").strip()
-        while not os.path.isdir(carpeta_origen):
-            print("La ruta no és vàlida.")
-            carpeta_origen = input("Introdueix una ruta de carpeta vàlida: ").strip()
-    elif not os.path.isdir(carpeta_origen):
+        carpeta_origen = pedir_carpeta("Introdueix la ruta de la carpeta que vols organitzar: ")
+        if not carpeta_origen:
+            return
+    else:
+        carpeta_origen = resolver_ruta_carpeta(carpeta_origen)
+    if not carpeta_origen:
         print("La ruta no és una carpeta accessible.")
         return
 
@@ -1251,7 +1315,7 @@ def organitzar_fitxers(carpeta_origen=None):
         os.path.abspath(FITXER_RED_NEURONAL),
     }
     carpeta_origen = os.path.abspath(carpeta_origen)
-    categorias_existentes = set(CATEGORIAS_REDES) | set(KEYWORDS_POR_CATEGORIA)
+    categorias_existentes = set(CATEGORIAS_REDES) | set(KEYWORDS_POR_CATEGORIA) | {"Por_revisar"}
     for historial in model.values():
         if isinstance(historial, dict):
             categorias_existentes.update(historial)
@@ -1273,7 +1337,10 @@ def organitzar_fitxers(carpeta_origen=None):
         print("No hi ha fitxers per organitzar.")
         return
 
-    print(f"\nAnalitzant {len(rutas_origen)} fitxers...")
+    imprimir_seccion("Organización de archivos")
+    print(f"Carpeta: {carpeta_origen}")
+    print(f"Archivos encontrados: {len(rutas_origen)}")
+    print("Analizando únicamente con la red neuronal..." if solo_red else "Analizando clasificación y formato...")
     plan = []
     destinos_reservados = set()
     for indice, ruta_origen in enumerate(rutas_origen, start=1):
@@ -1287,20 +1354,20 @@ def organitzar_fitxers(carpeta_origen=None):
             continue
 
         ruta_relativa = os.path.relpath(ruta_origen, carpeta_origen)
-        categoria, confianza, razones = clasificar_archivo_inteligente(
-            ruta_origen, model, red, ruta_relativa, cabecera
-        )
-        metodo = ", ".join(razones) if razones else "sin evidencias"
-        if categoria is not None and confianza < CONFIANCA_MINIMA:
-            _, _, ejemplos = obtenir_estadistiques_prediccio(extension, model)
-            categoria = confirmar_o_corregir_categoria(
-                nom_arxiu, categoria, confianza, ejemplos, model, extension
+        if solo_red:
+            categoria, confianza, alternativas = clasificar_archivo_solo_red(red, ruta_origen, cabecera)
+            metodo = "MLP exclusiva"
+        else:
+            categoria, confianza, razones = clasificar_archivo_inteligente(
+                ruta_origen, model, red, ruta_relativa, cabecera
             )
-            metodo = "confirmació de l'usuari"
-        elif categoria is None:
-            categoria = obtenir_categoria_usuari(nom_arxiu)
-            entrenar_algorisme(extension, categoria, model)
-            metodo = "categoria indicada por el usuario"
+            metodo = ", ".join(razones) if razones else "sin evidencias"
+            if categoria is not None and confianza < CONFIANCA_MINIMA:
+                categoria = "Por_revisar"
+                metodo = "confiança baixa; revisar"
+            elif categoria is None:
+                categoria = "Por_revisar"
+                metodo = "sense evidències; revisar"
 
         carpeta_destino = os.path.join(carpeta_origen, categoria)
         ruta_destino = obtenir_ruta_no_colisionant(carpeta_destino, nom_arxiu)
@@ -1318,14 +1385,39 @@ def organitzar_fitxers(carpeta_origen=None):
         print("No hi ha fitxers per organitzar.")
         return
 
-    print(f"\nVista prèvia: {len(plan)} fitxers")
-    for ruta_origen, ruta_destino, categoria, metodo, confianza in plan[:25]:
+    titulo_propuesta = "Propuesta MLP exclusiva" if solo_red else "Propuesta de organización"
+    imprimir_seccion(f"{titulo_propuesta}: {len(plan)} archivos")
+    comptadors = {}
+    for _, _, categoria, _, _ in plan:
+        comptadors[categoria] = comptadors.get(categoria, 0) + 1
+    for categoria, quantitat in sorted(comptadors.items()):
+        print(f"  {colorear(categoria, color_categoria(categoria))}: {quantitat} fitxers")
+    para_revisar = comptadors.get("Por_revisar", 0)
+    print(colorear(f"Per revisar manualment: {para_revisar} (es mouran a Por_revisar).", "amarillo"))
+
+    print("\nDETALLE (confianza | archivo -> carpeta; máximo 15 archivos)")
+    ancho_terminal = shutil.get_terminal_size(fallback=(80, 24)).columns
+    for ruta_origen, ruta_destino, categoria, metodo, confianza in plan[:15]:
+        color_confianza = "verde" if confianza >= 0.9 else "amarillo" if confianza >= CONFIANCA_MINIMA else "rojo"
+        prefijo = f"  {confianza:.0%} | "
+        sufijo = f" -> {categoria}" + (" [REVISAR]" if categoria == "Por_revisar" else "")
+        nombre = os.path.basename(ruta_origen)
+        ancho_nombre = max(8, ancho_terminal - len(prefijo) - len(sufijo) - 1)
+        if len(nombre) > ancho_nombre:
+            extension_nombre = os.path.splitext(nombre)[1]
+            ancho_base = ancho_nombre - len(extension_nombre) - 3
+            nombre = (
+                nombre[:max(1, ancho_base)] + "..." + extension_nombre
+                if ancho_base >= 1
+                else nombre[:ancho_nombre - 3] + "..."
+            )
         print(
-            f"{os.path.basename(ruta_origen)} -> {os.path.relpath(ruta_destino, carpeta_origen)} "
-            f"[{metodo}, confiança {confianza:.0%}]"
+            colorear(prefijo + nombre, color_confianza)
+            + " "
+            + colorear(sufijo[1:], color_categoria(categoria))
         )
-    if len(plan) > 25:
-        print(f"... i {len(plan) - 25} fitxers més.")
+    if len(plan) > 15:
+        print(f"  ... i {len(plan) - 15} fitxers més.")
     confirmacion = input("\nVols executar aquests moviments? [s/N]: ").strip().lower()
     if confirmacion not in {"s", "si", "sí", "y", "yes"}:
         print("Organització cancel·lada; no s'ha mogut cap fitxer.")
@@ -1333,6 +1425,7 @@ def organitzar_fitxers(carpeta_origen=None):
 
     movidos = 0
     errores = 0
+    movidos_por_categoria = {}
     for indice, (ruta_origen, ruta_destino, categoria, metodo, confianza) in enumerate(plan, start=1):
         try:
             os.makedirs(os.path.dirname(ruta_destino), exist_ok=True)
@@ -1341,14 +1434,20 @@ def organitzar_fitxers(carpeta_origen=None):
             )
             shutil.move(ruta_origen, ruta_destino)
             movidos += 1
-            if len(plan) <= 25:
-                print(f"Fitxer mogut a: {ruta_destino}")
-            elif indice % 500 == 0:
+            movidos_por_categoria[categoria] = movidos_por_categoria.get(categoria, 0) + 1
+            if len(plan) > 25 and indice % 500 == 0:
                 print(f"Moguts {indice}/{len(plan)} fitxers...")
         except OSError as error:
             errores += 1
             print(f"No s'ha pogut moure '{os.path.basename(ruta_origen)}': {error}")
-    print(f"\nResum: {movidos} fitxers moguts, {errores} errors.")
+    imprimir_seccion("Resultado de la organización")
+    print(f"Archivos movidos: {movidos} de {len(plan)}")
+    print(f"Errores: {errores}")
+    print(f"Puedes encontrarlos dentro de: {carpeta_origen}")
+    if movidos_por_categoria:
+        print("\nArchivos por carpeta de destino:")
+        for categoria, cantidad in sorted(movidos_por_categoria.items()):
+            print(f"  {categoria:<24} {cantidad:>4} archivo(s)")
 
 
 def format_bytes(mida):
@@ -1451,24 +1550,25 @@ def mostrar_informe_carpeta(carpeta):
     cantidad_duplicada = sum(len(grupo) - 1 for grupo in duplicats)
     espacio_duplicado = sum((len(grupo) - 1) * grupo[0]["size"] for grupo in duplicats)
 
-    print(f"\nInforme de: {raiz}")
+    imprimir_seccion("Informe de carpeta")
+    print(f"Ubicación: {raiz}")
     print(f"Archivos: {len(archivos)} | Espacio total: {format_bytes(bytes_totals)}")
     print(f"Archivos vacíos: {sum(archivo['size'] == 0 for archivo in archivos)}")
     print(f"Grupos duplicados: {len(duplicats)} | Copias redundantes: {cantidad_duplicada}")
     print(f"Espacio redundante estimado: {format_bytes(espacio_duplicado)}")
     print(f"Posibles extensiones incorrectas: {len(mismatches)} | Errores de lectura: {errores}")
 
-    print("\nExtensiones más frecuentes:")
+    imprimir_seccion("Extensiones más frecuentes")
     for extension, cantidad in sorted(extensiones.items(), key=lambda item: (-item[1], item[0]))[:10]:
         print(f"  {extension}: {cantidad}")
 
     grandes = sorted(archivos, key=lambda archivo: archivo["size"], reverse=True)[:10]
-    print("\nArchivos más grandes:")
+    imprimir_seccion("Archivos más grandes")
     for archivo in grandes:
         print(f"  {format_bytes(archivo['size'])}  {archivo['relative']}")
 
     if duplicats:
-        print("\nDuplicados exactos (mismo tamaño y SHA-256):")
+        imprimir_seccion("Duplicados exactos (mismo tamaño y SHA-256)")
         for grupo in duplicats[:5]:
             print(f"  {format_bytes(grupo[0]['size'])} x {len(grupo)}")
             for archivo in grupo[:3]:
@@ -1477,7 +1577,7 @@ def mostrar_informe_carpeta(carpeta):
                 print(f"    ... y {len(grupo) - 3} más")
 
     if mismatches:
-        print("\nPosibles extensiones que no coinciden con la firma:")
+        imprimir_seccion("Extensiones que no coinciden con la firma")
         for archivo in mismatches[:10]:
             print(
                 f"  {archivo['relative']}: la extensión sugiere "
@@ -1486,12 +1586,23 @@ def mostrar_informe_carpeta(carpeta):
     print("\nEl análisis es de solo lectura; no se ha movido ni borrado nada.")
 
 
+def resolver_ruta_carpeta(carpeta):
+    carpeta = os.path.expanduser(str(carpeta).strip().strip('"'))
+    if os.path.isdir(carpeta):
+        return os.path.abspath(carpeta)
+    if not os.path.isabs(carpeta):
+        desde_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), carpeta)
+        if os.path.isdir(desde_script):
+            return os.path.abspath(desde_script)
+    return None
+
+
 def pedir_carpeta(mensaje):
-    carpeta = input(mensaje).strip().strip('"')
-    if not os.path.isdir(carpeta):
+    carpeta = resolver_ruta_carpeta(input(mensaje))
+    if not carpeta:
         print("La ruta no es una carpeta accesible.")
         return None
-    return os.path.abspath(carpeta)
+    return carpeta
 
 
 def escribir_evento_jsonl(ruta, evento):
@@ -2053,31 +2164,31 @@ def asistente_completo():
     if not carpeta:
         return
 
-    print("\nPaso 1/5: informe de archivos, espacio y duplicados")
+    imprimir_seccion("Paso 1/5 - Informe de archivos, espacio y duplicados")
     mostrar_informe_carpeta(carpeta)
 
-    print("\nPaso 2/5: revisión contextual de extensiones")
+    imprimir_seccion("Paso 2/5 - Revisión de extensiones")
     renombrar_extensiones_con_aviso(carpeta)
 
-    print("\nPaso 3/5: limpieza reversible de copias exactas")
+    imprimir_seccion("Paso 3/5 - Cuarentena reversible de duplicados")
     respuesta = input("¿Quieres revisar duplicados y poner copias en cuarentena? [s/N]: ").strip().lower()
     if respuesta in {"s", "si", "sí", "y", "yes"}:
         poner_duplicados_en_cuarentena(carpeta)
     else:
         print("Cuarentena omitida.")
 
-    print("\nPaso 4/5: revisión de ubicaciones existentes")
+    imprimir_seccion("Paso 4/5 - Revisión de ubicaciones existentes")
     corregir_ubicaciones_por_contenido(carpeta)
 
-    print("\nPaso 5/5: clasificación y organización de archivos pendientes")
-    organitzar_fitxers(carpeta)
-    print("\nAsistente completo finalizado.")
+    imprimir_seccion("Paso 5/5 - Organización decidida por la MLP")
+    organitzar_fitxers(carpeta, solo_red=True)
+    imprimir_seccion("Asistente completo finalizado")
 
 
 def ejecutar_menu_avanzado():
     while True:
         print("\n=== Herramientas avanzadas ===")
-        print("1) Organizar solo")
+        print("1) Organizar solo (MLP neuronal)")
         print("2) Enseñar una categoría al modelo")
         print("3) Entrenar el modelo estadístico")
         print("4) Entrenar la red neuronal")
@@ -2087,9 +2198,10 @@ def ejecutar_menu_avanzado():
         print("8) Poner duplicados en cuarentena")
         print("9) Restaurar una cuarentena")
         print("10) Corregir archivos mal ubicados")
+        print("11) Organizar solo con la MLP neuronal")
         print("0) Volver")
         try:
-            opcion = input("Elige una opción [0-10]: ").strip()
+            opcion = input("Elige una opción [0-11]: ").strip()
         except (KeyboardInterrupt, EOFError):
             print("\nVolviendo al menú principal.")
             return
@@ -2120,8 +2232,10 @@ def ejecutar_menu_avanzado():
                 carpeta = pedir_carpeta("Carpeta cuyas ubicaciones quieres revisar: ")
                 if carpeta:
                     corregir_ubicaciones_por_contenido(carpeta)
+            elif opcion == "11":
+                organitzar_fitxers(solo_red=True)
             else:
-                print("Opción no válida; elige un número del 0 al 10.")
+                print("Opción no válida; elige un número del 0 al 11.")
         except KeyboardInterrupt:
             print("\nAcción cancelada; el menú sigue disponible.")
         except (OSError, ValueError) as error:
@@ -2145,7 +2259,7 @@ def ejecutar_menu():
             f"({len(CATEGORIAS_REDES)} generales + {len(CATEGORIAS_MODELO) - len(CATEGORIAS_REDES)} específicas)"
         )
         print(f"Categorías adicionales aprendidas del usuario: {len(categorias_aprendidas)}")
-        print("1) Asistente completo: analizar, corregir, limpiar y organizar")
+        print("1) Organizar todo con la MLP neuronal")
         print("2) Herramientas avanzadas")
         print("3) Salir")
         try:
@@ -2158,7 +2272,7 @@ def ejecutar_menu():
             return
         try:
             if opcion == "1":
-                asistente_completo()
+                organitzar_fitxers(solo_red=True)
             elif opcion == "2":
                 ejecutar_menu_avanzado()
             else:

@@ -1,543 +1,548 @@
 {
     ".png": {
-        "Imágenes": 12922,
-        "Diseño": 3681,
-        "Material": 1962
+        "Imágenes": 19762,
+        "Diseño": 5619,
+        "Material": 2988
     },
     ".pdf": {
-        "Documentos": 12906,
-        "Informes": 3888,
-        "Presentaciones": 1320
+        "Documentos": 19746,
+        "Informes": 5940,
+        "Presentaciones": 2004
     },
     ".docx": {
-        "Documentos": 11811,
-        "Informes": 2616,
-        "Textos": 3216
+        "Documentos": 18081,
+        "Informes": 3984,
+        "Textos": 4926
     },
     ".txt": {
-        "Documentos": 9141,
-        "Notas": 5196,
-        "Textos": 3786
+        "Documentos": 13986,
+        "Notas": 7950,
+        "Textos": 5781,
+        "notas": 1
     },
     ".xlsx": {
-        "Documentos": 3561,
-        "Datos": 9051,
-        "Tablas": 2811
+        "Documentos": 5385,
+        "Datos": 13896,
+        "Tablas": 4293
     },
     ".pptx": {
-        "Presentaciones": 9486,
-        "Documentos": 2616,
-        "Diseño": 1326
+        "Presentaciones": 14502,
+        "Documentos": 3984,
+        "Diseño": 2010
     },
     ".odt": {
-        "Documentos": 4551,
-        "Textos": 2820
+        "Documentos": 6945,
+        "Textos": 4302
     },
     ".csv": {
-        "Datos": 9900,
-        "Documentos": 2727,
-        "Tablas": 1506
+        "Datos": 15144,
+        "Documentos": 4152,
+        "Tablas": 2304
     },
     ".json": {
-        "Datos": 8361,
-        "Programación": 4536,
-        "Configuración": 2400
+        "Datos": 12807,
+        "Programación": 6930,
+        "Configuración": 3654
     },
     ".xml": {
-        "Datos": 6450,
-        "Configuración": 3048,
-        "Documentos": 1506
+        "Datos": 9870,
+        "Configuración": 4644,
+        "Documentos": 2304
     },
     ".md": {
-        "Documentos": 5622,
-        "Textos": 3480,
-        "Programación": 1962
+        "Documentos": 8587,
+        "Textos": 5304,
+        "Programación": 2988
     },
     ".jpg": {
-        "Imágenes": 12486,
-        "Diseño": 3240,
-        "Material": 1551
+        "Imágenes": 19098,
+        "Diseño": 4950,
+        "Material": 2349
     },
     ".jpeg": {
-        "Imágenes": 12060,
-        "Diseño": 3024,
-        "Material": 1542
+        "Imágenes": 18444,
+        "Diseño": 4620,
+        "Material": 2340
     },
     ".gif": {
-        "Imágenes": 6900,
-        "Diseño": 3048,
-        "Material": 1326
+        "Imágenes": 10548,
+        "Diseño": 4644,
+        "Material": 2010
     },
     ".webp": {
-        "Imágenes": 5604,
-        "Diseño": 2622,
-        "Material": 1110
+        "Imágenes": 8568,
+        "Diseño": 3990,
+        "Material": 1680
     },
     ".svg": {
-        "Diseño": 9492,
-        "Imágenes": 3696,
-        "Material": 1962
+        "Diseño": 14508,
+        "Imágenes": 5634,
+        "Material": 2988
     },
     ".bmp": {
-        "Imágenes": 4974,
-        "Diseño": 1968
+        "Imágenes": 7596,
+        "Diseño": 2994
     },
     ".ico": {
-        "Diseño": 3480,
-        "Imágenes": 1974
+        "Diseño": 5304,
+        "Imágenes": 3000
     },
     ".mp4": {
-        "Videos": 12702,
-        "Multimedia": 2616
+        "Videos": 19428,
+        "Multimedia": 3984
     },
     ".avi": {
-        "Videos": 7974,
-        "Multimedia": 2190
+        "Videos": 12192,
+        "Multimedia": 3330
     },
     ".mkv": {
-        "Videos": 8616,
-        "Multimedia": 2394
+        "Videos": 13176,
+        "Multimedia": 3648
     },
     ".mov": {
-        "Videos": 6690,
-        "Multimedia": 1968
+        "Videos": 10224,
+        "Multimedia": 2994
     },
     ".wmv": {
-        "Videos": 4122,
-        "Multimedia": 1116
+        "Videos": 6288,
+        "Multimedia": 1686
     },
     ".flv": {
-        "Videos": 3042,
-        "Multimedia": 900
+        "Videos": 4638,
+        "Multimedia": 1356
     },
     ".mp3": {
-        "Audio": 11208,
-        "Multimedia": 2604
+        "Audio": 17136,
+        "Multimedia": 3972
     },
     ".wav": {
-        "Audio": 9696,
-        "Multimedia": 2178
+        "Audio": 14826,
+        "Multimedia": 3318
     },
     ".flac": {
-        "Audio": 5634,
-        "Multimedia": 1332
+        "Audio": 8598,
+        "Multimedia": 2016
     },
     ".aac": {
-        "Audio": 4110,
-        "Multimedia": 1110
+        "Audio": 6276,
+        "Multimedia": 1680
     },
     ".ogg": {
-        "Audio": 3468,
-        "Multimedia": 897
+        "Audio": 5292,
+        "Multimedia": 1353
     },
     ".zip": {
-        "Archivos_Comprimidos": 10350,
-        "Backups": 2400
+        "Archivos_Comprimidos": 15822,
+        "Backups": 3654
     },
     ".rar": {
-        "Archivos_Comprimidos": 8412,
-        "Backups": 1962
+        "Archivos_Comprimidos": 12858,
+        "Backups": 2988
     },
     ".7z": {
-        "Archivos_Comprimidos": 6912,
-        "Backups": 1536
+        "Archivos_Comprimidos": 10560,
+        "Backups": 2334
     },
     ".tar": {
-        "Archivos_Comprimidos": 5628,
-        "Backups": 1321
+        "Archivos_Comprimidos": 8592,
+        "Backups": 2005
     },
     ".gz": {
-        "Archivos_Comprimidos": 4978,
-        "Backups": 1108
+        "Archivos_Comprimidos": 7600,
+        "Backups": 1678
     },
     ".bz2": {
-        "Archivos_Comprimidos": 3262,
-        "Backups": 787
+        "Archivos_Comprimidos": 4972,
+        "Backups": 1186
     },
     ".py": {
-        "Programación": 12694,
-        "Código": 4120,
-        "Datos": 1324
+        "Programación": 19420,
+        "Código": 6286,
+        "Datos": 2008
     },
     ".pyw": {
-        "Programación": 2398,
-        "Código": 1108
+        "Programación": 3652,
+        "Código": 1678
     },
     ".js": {
-        "Programación": 9484,
-        "Código": 3256,
-        "Web": 2608
+        "Programación": 14500,
+        "Código": 4966,
+        "Web": 3976
     },
     ".ts": {
-        "Programación": 6688,
-        "Código": 2608,
-        "Web": 1960
+        "Programación": 10222,
+        "Código": 3976,
+        "Web": 2986
     },
     ".java": {
-        "Programación": 7768,
-        "Código": 2404
+        "Programación": 11872,
+        "Código": 3658
     },
     ".c": {
-        "Programación": 6262,
-        "Código": 1972
+        "Programación": 9568,
+        "Código": 2998
     },
     ".cpp": {
-        "Programación": 7546,
-        "Código": 2404
+        "Programación": 11536,
+        "Código": 3658
     },
     ".cs": {
-        "Programación": 4762,
-        "Código": 1756
+        "Programación": 7270,
+        "Código": 2668
     },
     ".html": {
-        "Programación": 9268,
-        "Web": 3469,
-        "Diseño": 1540
+        "Programación": 14170,
+        "Web": 5293,
+        "Diseño": 2338
     },
     ".css": {
-        "Programación": 7978,
-        "Diseño": 3040,
-        "Web": 2182
+        "Programación": 12196,
+        "Diseño": 4636,
+        "Web": 3322
     },
     ".php": {
-        "Programación": 5614,
-        "Web": 2188
+        "Programación": 8578,
+        "Web": 3328
     },
     ".sql": {
-        "Datos": 6930,
-        "Programación": 2832,
-        "BaseDatos": 1926
+        "Datos": 10578,
+        "Programación": 4314,
+        "BaseDatos": 2952
     },
     ".db": {
-        "Datos": 5196,
-        "BaseDatos": 1962
+        "Datos": 7932,
+        "BaseDatos": 2988
     },
     ".sqlite": {
-        "Datos": 4968,
-        "BaseDatos": 1752
+        "Datos": 7590,
+        "BaseDatos": 2664
     },
     ".ini": {
-        "Configuración": 4536,
-        "Programación": 1746
+        "Configuración": 6930,
+        "Programación": 2658
     },
     ".cfg": {
-        "Configuración": 3894,
-        "Programación": 1323
+        "Configuración": 5946,
+        "Programación": 2007
     },
     ".yaml": {
-        "Configuración": 7098,
-        "Datos": 2190,
-        "Programación": 1611
+        "Configuración": 10860,
+        "Datos": 3330,
+        "Programación": 2466
     },
     ".yml": {
-        "Configuración": 6450,
-        "Datos": 1968,
-        "Programación": 1296
+        "Configuración": 9870,
+        "Datos": 2994,
+        "Programación": 1980
     },
     ".toml": {
-        "Configuración": 4974,
-        "Programación": 1536
+        "Configuración": 7596,
+        "Programación": 2334
     },
     ".exe": {
-        "Programas": 6694,
-        "Software": 2830
+        "Programas": 10228,
+        "Software": 4312
     },
     ".msi": {
-        "Programas": 4114,
-        "Software": 1756
+        "Programas": 6280,
+        "Software": 2668
     },
     ".apk": {
-        "Programas": 2830,
-        "Software": 1114
+        "Programas": 4312,
+        "Software": 1684
     },
     ".dmg": {
-        "Programas": 2188,
-        "Software": 898
+        "Programas": 3328,
+        "Software": 1354
     },
     ".iso": {
-        "Archivos_Comprimidos": 2824,
-        "Software": 1330
+        "Archivos_Comprimidos": 4306,
+        "Software": 2014
     },
     ".torrent": {
         "Programas": 54,
         "Archivos_Comprimidos": 18
     },
     ".psd": {
-        "Diseño": 7974,
-        "Imágenes": 2838
+        "Diseño": 12192,
+        "Imágenes": 4320
     },
     ".ai": {
-        "Diseño": 6702,
-        "Imágenes": 2406
+        "Diseño": 10236,
+        "Imágenes": 3660
     },
     ".fig": {
-        "Diseño": 4110,
-        "Imágenes": 1968
+        "Diseño": 6276,
+        "Imágenes": 2994
     },
     ".epub": {
-        "Documentos": 4762,
-        "Libros": 1972
+        "Documentos": 7270,
+        "Libros": 2998
     },
     ".mobi": {
-        "Documentos": 3262,
-        "Libros": 1540
+        "Documentos": 4972,
+        "Libros": 2338
     },
     ".djvu": {
-        "Documentos": 2188,
-        "Libros": 898
+        "Documentos": 3328,
+        "Libros": 1354
     },
     ".xls": {
-        "Datos": 7092,
-        "Documentos": 3030,
-        "Tablas": 2136
+        "Datos": 10854,
+        "Documentos": 4626,
+        "Tablas": 3276
     },
     ".xlsm": {
-        "Datos": 4770,
-        "Documentos": 1974,
-        "Tablas": 1296
+        "Datos": 7278,
+        "Documentos": 3000,
+        "Tablas": 1980
     },
     ".doc": {
-        "Documentos": 9486,
-        "Textos": 2976,
-        "Informes": 1716
+        "Documentos": 14616,
+        "Textos": 4572,
+        "Informes": 2628
     },
     ".rtf": {
-        "Documentos": 4236,
-        "Textos": 1926
+        "Documentos": 6516,
+        "Textos": 2952
     },
     ".tex": {
-        "Documentos": 3186,
-        "Textos": 2136,
-        "Informes": 1296
+        "Documentos": 4896,
+        "Textos": 3276,
+        "Informes": 1980
     },
     ".tsv": {
-        "Datos": 6126,
-        "Documentos": 2136
+        "Datos": 9432,
+        "Documentos": 3276
     },
     ".env": {
-        "Configuración": 2976,
-        "Programación": 1086
+        "Configuración": 4572,
+        "Programación": 1656
     },
     ".dbf": {
-        "Datos": 2346,
-        "BaseDatos": 876
+        "Datos": 3600,
+        "BaseDatos": 1332
     },
     ".mdb": {
-        "Datos": 1926,
-        "BaseDatos": 666
+        "Datos": 2952,
+        "BaseDatos": 1008
     },
     ".ppt": {
-        "Presentaciones": 8436,
-        "Documentos": 1926
+        "Presentaciones": 12996,
+        "Documentos": 2952
     },
     ".odp": {
-        "Presentaciones": 5706,
-        "Documentos": 1506
+        "Presentaciones": 8784,
+        "Documentos": 2304
     },
     ".key": {
-        "Presentaciones": 4236,
-        "Diseño": 1296
+        "Presentaciones": 6516,
+        "Diseño": 1980
     },
     ".tiff": {
-        "Imágenes": 4236,
-        "Diseño": 1716
+        "Imágenes": 6516,
+        "Diseño": 2628
     },
     ".tif": {
-        "Imágenes": 4026,
-        "Diseño": 1506
+        "Imágenes": 6192,
+        "Diseño": 2304
     },
     ".heic": {
-        "Imágenes": 3396,
-        "Diseño": 1086
+        "Imágenes": 5220,
+        "Diseño": 1656
     },
     ".raw": {
-        "Imágenes": 2766,
-        "Diseño": 981
+        "Imágenes": 4248,
+        "Diseño": 1494
     },
     ".nef": {
-        "Imágenes": 2346,
-        "Diseño": 876
+        "Imágenes": 3600,
+        "Diseño": 1332
     },
     ".mpeg": {
-        "Videos": 4446,
-        "Multimedia": 1296
+        "Videos": 6840,
+        "Multimedia": 1980
     },
     ".mpg": {
-        "Videos": 4026,
-        "Multimedia": 1086
+        "Videos": 6192,
+        "Multimedia": 1656
     },
     ".webm": {
-        "Videos": 5496,
-        "Multimedia": 1506
+        "Videos": 8460,
+        "Multimedia": 2304
     },
     ".3gp": {
-        "Videos": 2136,
-        "Multimedia": 666
+        "Videos": 3276,
+        "Multimedia": 1008
     },
     ".m4a": {
-        "Audio": 2976,
-        "Multimedia": 771
+        "Audio": 4572,
+        "Multimedia": 1170
     },
     ".wma": {
-        "Audio": 2346,
-        "Multimedia": 666
+        "Audio": 3600,
+        "Multimedia": 1008
     },
     ".xz": {
-        "Archivos_Comprimidos": 2554,
-        "Backups": 664
+        "Archivos_Comprimidos": 3922,
+        "Backups": 1006
     },
     ".tar.gz": {
-        "Archivos_Comprimidos": 4654,
-        "Backups": 979
+        "Archivos_Comprimidos": 7162,
+        "Backups": 1492
     },
     ".tar.xz": {
-        "Archivos_Comprimidos": 2134,
-        "Backups": 559
+        "Archivos_Comprimidos": 3274,
+        "Backups": 844
     },
     ".pyc": {
-        "Programación": 1714,
-        "Código": 874
+        "Programación": 2626,
+        "Código": 1330
     },
     ".jsx": {
-        "Programación": 4864,
-        "Web": 2134,
-        "Código": 1714
+        "Programación": 7486,
+        "Web": 3274,
+        "Código": 2626
     },
     ".tsx": {
-        "Programación": 4444,
-        "Web": 1924,
-        "Código": 1504
+        "Programación": 6838,
+        "Web": 2950,
+        "Código": 2302
     },
     ".jar": {
-        "Programación": 2554,
-        "Software": 1294
+        "Programación": 3922,
+        "Software": 1978
     },
     ".cc": {
-        "Programación": 5494,
-        "Código": 1924
+        "Programación": 8458,
+        "Código": 2950
     },
     ".rb": {
-        "Programación": 2974,
-        "Código": 1084
+        "Programación": 4570,
+        "Código": 1654
     },
     ".go": {
-        "Programación": 2554,
-        "Código": 874
+        "Programación": 3922,
+        "Código": 1330
     },
     ".rs": {
-        "Programación": 2134,
-        "Código": 874
+        "Programación": 3274,
+        "Código": 1330
     },
     ".swift": {
-        "Programación": 1924,
-        "Código": 874
+        "Programación": 2950,
+        "Código": 1330
     },
     ".kt": {
-        "Programación": 1924,
-        "Código": 769
+        "Programación": 2950,
+        "Código": 1168
     },
     ".htm": {
-        "Programación": 4444,
-        "Web": 1714,
-        "Diseño": 874
+        "Programación": 6838,
+        "Web": 2626,
+        "Diseño": 1330
     },
     ".scss": {
-        "Programación": 3184,
-        "Diseño": 1504,
-        "Web": 1084
+        "Programación": 4894,
+        "Diseño": 2302,
+        "Web": 1654
     },
     ".sass": {
-        "Programación": 2554,
-        "Diseño": 1294,
-        "Web": 874
+        "Programación": 3922,
+        "Diseño": 1978,
+        "Web": 1330
     },
     ".lua": {
-        "Programación": 2134,
-        "Código": 874
+        "Programación": 3274,
+        "Código": 1330
     },
     ".sh": {
-        "Programación": 4444,
-        "Configuración": 1714
+        "Programación": 6838,
+        "Configuración": 2626
     },
     ".bash": {
-        "Programación": 2974,
-        "Configuración": 1294
+        "Programación": 4570,
+        "Configuración": 1978
     },
     ".zsh": {
-        "Programación": 1924,
-        "Configuración": 769
+        "Programación": 2950,
+        "Configuración": 1168
     },
     ".ps1": {
-        "Programación": 2344,
-        "Configuración": 1084
+        "Programación": 3598,
+        "Configuración": 1654
     },
     ".bat": {
-        "Programación": 2554,
-        "Configuración": 979
+        "Programación": 3922,
+        "Configuración": 1492
     },
     ".cmd": {
-        "Programación": 2134,
-        "Configuración": 874
+        "Programación": 3274,
+        "Configuración": 1330
     },
     ".pl": {
-        "Programación": 1924,
-        "Código": 769
+        "Programación": 2950,
+        "Código": 1168
     },
     ".r": {
-        "Datos": 2134,
-        "Programación": 1084
+        "Datos": 3274,
+        "Programación": 1654
     },
     ".ipynb": {
-        "Programación": 5494,
-        "Datos": 2344,
-        "Documentos": 1084
+        "Programación": 8458,
+        "Datos": 3598,
+        "Documentos": 1654
     },
     ".dll": {
-        "Programas": 2344,
-        "Software": 1084
+        "Programas": 3598,
+        "Software": 1654
     },
     ".deb": {
-        "Programas": 1924,
-        "Software": 874
+        "Programas": 2950,
+        "Software": 1330
     },
     ".rpm": {
-        "Programas": 1714,
-        "Software": 874
+        "Programas": 2626,
+        "Software": 1330
     },
     ".app": {
-        "Programas": 1294,
-        "Software": 664
+        "Programas": 1978,
+        "Software": 1006
     },
     ".fb2": {
-        "Documentos": 1924,
-        "Libros": 769
+        "Documentos": 2950,
+        "Libros": 1168
     },
     ".bak": {
-        "Backups": 3184,
-        "Datos": 1504
+        "Backups": 4894,
+        "Datos": 2302
     },
     ".old": {
-        "Backups": 1924,
-        "Datos": 874
+        "Backups": 2950,
+        "Datos": 1330
     },
     ".tmp": {
-        "Backups": 1294,
-        "Documentos": 454
+        "Backups": 1979,
+        "Documentos": 682
     },
     ".log": {
-        "Datos": 2764,
-        "Documentos": 1084
+        "Datos": 4246,
+        "Documentos": 1655
     },
     ".dat": {
-        "Datos": 2344,
-        "Backups": 874
+        "Datos": 3598,
+        "Backups": 1330,
+        "Configuración": 1
     },
     ".bin": {
-        "Datos": 1714,
-        "Archivos_Comprimidos": 664
+        "Datos": 2627,
+        "Archivos_Comprimidos": 1006
     },
     ".hex": {
-        "Datos": 1084,
-        "Programación": 664
+        "Datos": 1654,
+        "Programación": 1006
+    },
+    "": {
+        "BaseDatos": 1
     }
 }
